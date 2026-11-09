@@ -6,7 +6,12 @@ export function Screen({ children, style }: ViewProps) {
   return (
     <ScrollView
       style={{ flex: 1, backgroundColor: colors.background }}
-      contentContainerStyle={{ padding: spacing.md, gap: spacing.md, ...style }}
+      contentContainerStyle={{
+        paddingHorizontal: spacing.xl,
+        paddingTop: spacing.xxl,
+        gap: spacing.lg,
+        ...style,
+      }}
     >
       {children}
     </ScrollView>
