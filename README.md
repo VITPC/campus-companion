@@ -70,6 +70,9 @@ components/ui/        Shared UI components (Screen, Text, ...)
 constants/theme.ts    Design tokens: colours, typography, spacing, radius
 hooks/                Shared hooks (useTheme, ...)
 design/               Screen designs (PNG) and token reference
+mocks/data.json       Mock data for every screen (use it until we have an API)
+.github/issues/       Source text of the GitHub issues
+scripts/              Helper scripts (create-issues.sh)
 ```
 
 ---

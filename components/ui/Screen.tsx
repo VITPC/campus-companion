@@ -1,5 +1,5 @@
-import { useTheme } from "@/hooks/useTheme";
 import { ScrollView, type ViewProps } from "react-native";
+import { useTheme } from "@/hooks/useTheme";
 
 export function Screen({ children, style }: ViewProps) {
   const { colors, spacing } = useTheme();

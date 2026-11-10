@@ -1,0 +1,635 @@
+{
+  "meta": {
+    "description": "Mock data for Campus Companion. Matches the screens in design/screens. Use meta.now as the current time in development so the 'Now' class card always has something to show.",
+    "now": "2026-11-09T09:35:00+01:00",
+    "timezone": "Africa/Douala"
+  },
+  "student": {
+    "id": "stu_001",
+    "firstName": "Ngwa",
+    "lastName": "Emmanuel",
+    "initials": "NE",
+    "matricule": "YIBS24CS017",
+    "email": "ngwa.emmanuel@yibs.example",
+    "programme": "Computer Science",
+    "level": 200,
+    "avatarUrl": null
+  },
+  "settings": {
+    "language": "en",
+    "classReminders": true,
+    "darkMode": false
+  },
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English",
+      "isDefault": true
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "nativeName": "Français",
+      "isDefault": false
+    }
+  ],
+  "semester": {
+    "id": "2026-27-s1",
+    "label": "Semester 1 · 2026/27",
+    "currentWeek": {
+      "start": "2026-11-09",
+      "end": "2026-11-13"
+    }
+  },
+  "courses": [
+    {
+      "id": "csc201",
+      "code": "CSC 201",
+      "title": "Data Structures",
+      "lecturer": "Dr. Fon Mbah",
+      "credits": 4,
+      "type": "core",
+      "room": "Hall B2",
+      "attendance": 0.92
+    },
+    {
+      "id": "csc215",
+      "code": "CSC 215",
+      "title": "Mobile Development",
+      "lecturer": "Mr. Tanyi",
+      "credits": 4,
+      "type": "core",
+      "room": "Lab 3",
+      "attendance": 0.88
+    },
+    {
+      "id": "mat203",
+      "code": "MAT 203",
+      "title": "Discrete Mathematics",
+      "lecturer": "Dr. Achu",
+      "credits": 3,
+      "type": "core",
+      "room": "Amphi 250",
+      "attendance": 0.95
+    },
+    {
+      "id": "csc221",
+      "code": "CSC 221",
+      "title": "Database Systems",
+      "lecturer": "Mrs. Ndip",
+      "credits": 4,
+      "type": "core",
+      "room": "Lab 1",
+      "attendance": 0.81
+    },
+    {
+      "id": "eng102",
+      "code": "ENG 102",
+      "title": "Communication Skills",
+      "lecturer": "Mr. Bate",
+      "credits": 2,
+      "type": "elective",
+      "room": "Room 104",
+      "attendance": 0.9
+    }
+  ],
+  "timetable": [
+    {
+      "id": "tt_01",
+      "courseId": "csc201",
+      "day": "mon",
+      "start": "08:00",
+      "end": "10:00",
+      "room": "Hall B2"
+    },
+    {
+      "id": "tt_02",
+      "courseId": "csc215",
+      "day": "mon",
+      "start": "10:30",
+      "end": "12:30",
+      "room": "Lab 3"
+    },
+    {
+      "id": "tt_03",
+      "courseId": "mat203",
+      "day": "mon",
+      "start": "14:00",
+      "end": "16:00",
+      "room": "Amphi 250"
+    },
+    {
+      "id": "tt_04",
+      "courseId": "csc201",
+      "day": "tue",
+      "start": "08:00",
+      "end": "10:00",
+      "room": "Hall B2"
+    },
+    {
+      "id": "tt_05",
+      "courseId": "csc221",
+      "day": "tue",
+      "start": "13:00",
+      "end": "15:00",
+      "room": "Lab 1"
+    },
+    {
+      "id": "tt_06",
+      "courseId": "eng102",
+      "day": "wed",
+      "start": "09:00",
+      "end": "11:00",
+      "room": "Room 104"
+    },
+    {
+      "id": "tt_07",
+      "courseId": "csc215",
+      "day": "wed",
+      "start": "14:00",
+      "end": "17:00",
+      "room": "Lab 3"
+    },
+    {
+      "id": "tt_08",
+      "courseId": "mat203",
+      "day": "fri",
+      "start": "08:00",
+      "end": "10:00",
+      "room": "Amphi 250"
+    },
+    {
+      "id": "tt_09",
+      "courseId": "csc221",
+      "day": "fri",
+      "start": "10:30",
+      "end": "12:30",
+      "room": "Lab 1"
+    }
+  ],
+  "breaks": [
+    {
+      "day": "mon",
+      "start": "12:30",
+      "end": "14:00",
+      "label": "Lunch break"
+    },
+    {
+      "day": "tue",
+      "start": "10:00",
+      "end": "13:00",
+      "label": "Free period"
+    },
+    {
+      "day": "wed",
+      "start": "11:00",
+      "end": "14:00",
+      "label": "Lunch break"
+    },
+    {
+      "day": "fri",
+      "start": "12:30",
+      "end": "14:00",
+      "label": "Lunch break"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "an_01",
+      "category": "Exams",
+      "title": "First-semester exam timetable is now published",
+      "body": "The exam timetable for Semester 1 is available on the notice board and in the student portal. Exams start on Monday 14 December.",
+      "source": "Registrar's Office",
+      "publishedAt": "2026-11-09T07:30:00+01:00",
+      "highlighted": true
+    },
+    {
+      "id": "an_02",
+      "category": "Campus",
+      "title": "Library opens until 22:00 during revision week",
+      "body": "From 30 November, the library will stay open until 22:00 Monday to Saturday. Bring your student ID.",
+      "source": "YIBS Library",
+      "publishedAt": "2026-11-08T16:00:00+01:00",
+      "highlighted": false
+    },
+    {
+      "id": "an_03",
+      "category": "Events",
+      "title": "Tech Talk: building apps with React Native",
+      "body": "Join us in Amphi 250 on Friday at 15:00 for a talk and live demo. Open to all levels.",
+      "source": "Computer Science Department",
+      "publishedAt": "2026-11-06T11:00:00+01:00",
+      "highlighted": false
+    },
+    {
+      "id": "an_04",
+      "category": "Fees",
+      "title": "Second instalment deadline: 30 November",
+      "body": "Pay the second fee instalment by 30 November to keep access to exams. Receipts go to the Bursary.",
+      "source": "Bursary",
+      "publishedAt": "2026-11-03T09:00:00+01:00",
+      "highlighted": false
+    }
+  ],
+  "results": [
+    {
+      "courseId": "csc201",
+      "caAverage": 14.5,
+      "outOf": 20,
+      "grade": "B+",
+      "assessments": [
+        {
+          "id": "rs_csc201_1",
+          "title": "CA 1 · Arrays & stacks",
+          "score": 15,
+          "outOf": 20,
+          "status": "published",
+          "weight": 0.15
+        },
+        {
+          "id": "rs_csc201_2",
+          "title": "CA 2 · Queues & recursion",
+          "score": 14,
+          "outOf": 20,
+          "status": "published",
+          "weight": 0.15
+        },
+        {
+          "id": "rs_csc201_3",
+          "title": "Final exam",
+          "score": null,
+          "outOf": 20,
+          "status": "pending",
+          "weight": 0.7,
+          "scheduledFor": "2026-12-14"
+        }
+      ]
+    },
+    {
+      "courseId": "csc215",
+      "caAverage": 16,
+      "outOf": 20,
+      "grade": "A",
+      "assessments": [
+        {
+          "id": "rs_csc215_1",
+          "title": "CA 1 · Layout with Flexbox",
+          "score": 17,
+          "outOf": 20,
+          "status": "published",
+          "weight": 0.15
+        },
+        {
+          "id": "rs_csc215_2",
+          "title": "CA 2 · Navigation",
+          "score": 15,
+          "outOf": 20,
+          "status": "published",
+          "weight": 0.15
+        },
+        {
+          "id": "rs_csc215_3",
+          "title": "Final exam",
+          "score": null,
+          "outOf": 20,
+          "status": "pending",
+          "weight": 0.7,
+          "scheduledFor": "2026-12-16"
+        }
+      ]
+    },
+    {
+      "courseId": "mat203",
+      "caAverage": 11.5,
+      "outOf": 20,
+      "grade": "C",
+      "assessments": [
+        {
+          "id": "rs_mat203_1",
+          "title": "CA 1 · Logic & proofs",
+          "score": 12,
+          "outOf": 20,
+          "status": "published",
+          "weight": 0.3
+        },
+        {
+          "id": "rs_mat203_2",
+          "title": "Final exam",
+          "score": null,
+          "outOf": 20,
+          "status": "pending",
+          "weight": 0.7,
+          "scheduledFor": "2026-12-15"
+        }
+      ]
+    },
+    {
+      "courseId": "csc221",
+      "caAverage": null,
+      "outOf": 20,
+      "grade": null,
+      "assessments": [
+        {
+          "id": "rs_csc221_1",
+          "title": "CA 1 · ER diagrams",
+          "score": null,
+          "outOf": 20,
+          "status": "pending",
+          "weight": 0.3,
+          "scheduledFor": "2026-11-20"
+        },
+        {
+          "id": "rs_csc221_2",
+          "title": "Final exam",
+          "score": null,
+          "outOf": 20,
+          "status": "pending",
+          "weight": 0.7,
+          "scheduledFor": "2026-12-17"
+        }
+      ]
+    },
+    {
+      "courseId": "eng102",
+      "caAverage": 13,
+      "outOf": 20,
+      "grade": "B",
+      "assessments": [
+        {
+          "id": "rs_eng102_1",
+          "title": "Presentation",
+          "score": 13,
+          "outOf": 20,
+          "status": "published",
+          "weight": 0.4
+        },
+        {
+          "id": "rs_eng102_2",
+          "title": "Final exam",
+          "score": null,
+          "outOf": 20,
+          "status": "pending",
+          "weight": 0.6,
+          "scheduledFor": "2026-12-18"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "nt_01",
+      "courseId": "csc201",
+      "category": "lectures",
+      "title": "Week 8 · Binary trees",
+      "fileType": "pdf",
+      "sizeBytes": 2516582,
+      "addedAt": "2026-11-09T07:00:00+01:00",
+      "isNew": true,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_02",
+      "courseId": "csc201",
+      "category": "lectures",
+      "title": "Week 7 · Hash tables",
+      "fileType": "pdf",
+      "sizeBytes": 3145728,
+      "addedAt": "2026-11-05T10:00:00+01:00",
+      "isNew": true,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_03",
+      "courseId": "csc201",
+      "category": "lectures",
+      "title": "Week 6 · Linked lists",
+      "fileType": "ppt",
+      "sizeBytes": 5347737,
+      "addedAt": "2026-11-02T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_04",
+      "courseId": "csc201",
+      "category": "lectures",
+      "title": "Week 5 · Queues",
+      "fileType": "pdf",
+      "sizeBytes": 1887436,
+      "addedAt": "2026-10-26T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_05",
+      "courseId": "csc201",
+      "category": "tutorials",
+      "title": "Tutorial 4 · Stack exercises",
+      "fileType": "pdf",
+      "sizeBytes": 524288,
+      "addedAt": "2026-10-30T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_06",
+      "courseId": "csc201",
+      "category": "pastPapers",
+      "title": "CSC 201 Exam · 2025",
+      "fileType": "pdf",
+      "sizeBytes": 838861,
+      "addedAt": "2026-10-01T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_07",
+      "courseId": "csc215",
+      "category": "lectures",
+      "title": "Week 8 · Lists with FlatList",
+      "fileType": "pdf",
+      "sizeBytes": 1572864,
+      "addedAt": "2026-11-06T10:00:00+01:00",
+      "isNew": true,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_08",
+      "courseId": "csc215",
+      "category": "lectures",
+      "title": "Week 7 · Expo Router",
+      "fileType": "ppt",
+      "sizeBytes": 4194304,
+      "addedAt": "2026-10-30T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_09",
+      "courseId": "mat203",
+      "category": "lectures",
+      "title": "Chapter 4 · Graph theory",
+      "fileType": "pdf",
+      "sizeBytes": 2097152,
+      "addedAt": "2026-11-04T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_10",
+      "courseId": "mat203",
+      "category": "pastPapers",
+      "title": "MAT 203 Exam · 2025",
+      "fileType": "pdf",
+      "sizeBytes": 734003,
+      "addedAt": "2026-10-01T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_11",
+      "courseId": "csc221",
+      "category": "lectures",
+      "title": "Week 6 · Normalisation",
+      "fileType": "pdf",
+      "sizeBytes": 1258291,
+      "addedAt": "2026-11-03T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "nt_12",
+      "courseId": "eng102",
+      "category": "lectures",
+      "title": "Writing a formal letter",
+      "fileType": "doc",
+      "sizeBytes": 419430,
+      "addedAt": "2026-10-28T10:00:00+01:00",
+      "isNew": false,
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "as_01",
+      "courseId": "csc201",
+      "title": "Linked lists lab",
+      "description": "Implement insert, delete and reverse on a singly linked list. Submit one PDF with code and screenshots.",
+      "dueAt": "2026-11-12T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "todo",
+      "attachments": [
+        {
+          "name": "lab4_brief.pdf",
+          "sizeBytes": 348160,
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        }
+      ],
+      "submittedAt": null,
+      "score": null
+    },
+    {
+      "id": "as_02",
+      "courseId": "csc201",
+      "title": "Stack calculator",
+      "description": "Build a postfix calculator using a stack.",
+      "dueAt": "2026-10-28T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "graded",
+      "attachments": [],
+      "submittedAt": "2026-10-28T18:12:00+01:00",
+      "score": 17
+    },
+    {
+      "id": "as_03",
+      "courseId": "csc201",
+      "title": "Big-O worksheet",
+      "description": "Answer the 10 complexity questions in the worksheet.",
+      "dueAt": "2026-10-14T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "graded",
+      "attachments": [],
+      "submittedAt": "2026-10-14T21:40:00+01:00",
+      "score": 13
+    },
+    {
+      "id": "as_04",
+      "courseId": "csc201",
+      "title": "Recursion exercises",
+      "description": "Solve the 5 recursion problems and explain the base case for each.",
+      "dueAt": "2026-11-04T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "submitted",
+      "attachments": [],
+      "submittedAt": "2026-11-04T20:05:00+01:00",
+      "score": null
+    },
+    {
+      "id": "as_05",
+      "courseId": "csc215",
+      "title": "Profile screen layout",
+      "description": "Recreate the profile screen from the design using Flexbox only.",
+      "dueAt": "2026-11-11T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "todo",
+      "attachments": [
+        {
+          "name": "profile_design.png",
+          "sizeBytes": 113353,
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        }
+      ],
+      "submittedAt": null,
+      "score": null
+    },
+    {
+      "id": "as_06",
+      "courseId": "csc215",
+      "title": "Navigation quiz app",
+      "description": "Build a 3-screen quiz app with a stack navigator.",
+      "dueAt": "2026-11-13T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "todo",
+      "attachments": [],
+      "submittedAt": null,
+      "score": null
+    },
+    {
+      "id": "as_07",
+      "courseId": "mat203",
+      "title": "Proof by induction set",
+      "description": "Prove the 6 statements in the problem set by induction.",
+      "dueAt": "2026-11-17T12:00:00+01:00",
+      "maxScore": 20,
+      "status": "todo",
+      "attachments": [],
+      "submittedAt": null,
+      "score": null
+    },
+    {
+      "id": "as_08",
+      "courseId": "csc221",
+      "title": "Library ER diagram",
+      "description": "Draw an ER diagram for a school library system.",
+      "dueAt": "2026-11-18T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "todo",
+      "attachments": [],
+      "submittedAt": null,
+      "score": null
+    },
+    {
+      "id": "as_09",
+      "courseId": "eng102",
+      "title": "Formal letter",
+      "description": "Write a formal letter requesting an internship placement.",
+      "dueAt": "2026-11-20T23:59:00+01:00",
+      "maxScore": 20,
+      "status": "todo",
+      "attachments": [],
+      "submittedAt": null,
+      "score": null
+    }
+  ]
+}

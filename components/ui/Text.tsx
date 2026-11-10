@@ -1,11 +1,12 @@
 import type { ThemeColors, typography } from "@/constants/theme";
 import { useTheme } from "@/hooks/useTheme";
-import { Text as RNText, TextProps } from "react-native";
+import { Text as RNText, type TextProps } from "react-native";
 
 type props = TextProps & {
   variant?: keyof typeof typography;
   color?: keyof ThemeColors;
 };
+
 export function Text({
   variant = "body",
   color = "text",
