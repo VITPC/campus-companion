@@ -7,7 +7,8 @@ import { YStack } from "@/components/ui/YStack";
 import { useData } from "@/hooks/useData";
 import { useTheme } from "@/hooks/useTheme";
 import { Image } from "expo-image";
-import { FlatList, View } from "react-native";
+import { router } from "expo-router";
+import { FlatList, Pressable, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function () {
@@ -30,21 +31,24 @@ export default function () {
             <Text variant="caption">Monday . 9th Nov</Text>
             <Text variant="h1">Morning, Ngwa</Text>
           </YStack>
-          <Image
-            style={{ width: 80, height: 80, borderRadius: 1000 }}
-            source="https://picsum.photos/seed/686/80"
-            // placeholder={{ blurhash }}
-            contentFit="cover"
-            transition={1000}
-          />
+          <Pressable onPress={() => router.push("/(tabs)/profile")}>
+            <Image
+              style={{ width: 80, height: 80, borderRadius: 1000 }}
+              source="https://picsum.photos/seed/686/80"
+              // placeholder={{ blurhash }}
+              contentFit="cover"
+              transition={1000}
+            />
+          </Pressable>
         </XStack>
 
         {/* Recent course for today */}
         <YStack
           style={{
             backgroundColor: colors.primary,
-            borderRadius: spacing.xxl,
-            padding: spacing.xxl,
+            borderRadius: spacing.xl,
+            paddingHorizontal: spacing.lg,
+            paddingVertical: spacing.xl,
             gap: spacing.lg,
           }}
         >

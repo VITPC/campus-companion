@@ -7,8 +7,10 @@ export function Screen({ children, style }: ViewProps) {
     <ScrollView
       style={{ flex: 1, backgroundColor: colors.background }}
       contentContainerStyle={{
-        paddingHorizontal: spacing.xl,
+        paddingHorizontal: spacing.md,
         paddingTop: spacing.xxl,
+        // Room to scroll past the floating tab bar (64 high + 28 from the bottom + 24)
+        paddingBottom: 116,
         gap: spacing.lg,
         ...style,
       }}
