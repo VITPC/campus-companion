@@ -1,47 +1,41 @@
-import { Tabs } from "expo-router";
 import { Feather } from "@expo/vector-icons";
-import { useTheme } from "@/hooks/useTheme";
+import { Tabs } from "expo-router";
+import { TabBar } from "@/components/navigation/TabBar";
 
+// tabBarIcon gets `color` typed as ColorValue; Feather wants a string.
+// Our TabBar always passes a hex string, so the cast is safe.
 export default function TabsLayout() {
-  const { colors, typography } = useTheme();
   return (
     <Tabs
-      screenOptions={{
-        headerShown: false,
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.textMuted,
-        tabBarStyle: {
-          backgroundColor: colors.background,
-          borderTopColor: colors.border,
-        },
-        tabBarLabelStyle: {
-          fontWeight: "bold",
-          fontFamily: typography.caption.fontFamily,
-        },
-      }}
+      // Our own tab bar (components/navigation/TabBar.tsx) replaces the default one
+      tabBar={(props) => <TabBar {...props} />}
+      screenOptions={{ headerShown: false }}
     >
       <Tabs.Screen
         name="home"
         options={{
           title: "Home",
-          headerShown: false,
-          tabBarIcon: ({ size }) => <Feather name="home" size={size} />,
+          tabBarIcon: ({ color, size }) => (
+            <Feather name="home" color={color as string} size={size} />
+          ),
         }}
       />
       <Tabs.Screen
         name="courses"
         options={{
           title: "Courses",
-          headerShown: false,
-          tabBarIcon: ({ size }) => <Feather name="book" size={size} />,
+          tabBarIcon: ({ color, size }) => (
+            <Feather name="book" color={color as string} size={size} />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
-          headerShown: false,
-          tabBarIcon: ({ size }) => <Feather name="settings" size={size} />,
+          tabBarIcon: ({ color, size }) => (
+            <Feather name="user" color={color as string} size={size} />
+          ),
         }}
       />
     </Tabs>
