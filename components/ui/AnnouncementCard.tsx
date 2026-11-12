@@ -1,7 +1,7 @@
 import { useTheme } from "@/hooks/useTheme";
 import { YStack } from "./YStack";
 import { Text } from "./Text";
-import { Dimensions, useWindowDimensions } from "react-native";
+import { useWindowDimensions } from "react-native";
 
 type Announcement = {
   id: string;
@@ -13,13 +13,14 @@ type Announcement = {
   highlighted: boolean;
 };
 
-type props = {
+type Props = {
   announcement: Announcement;
 };
 
-export function AnnouncementCard({ announcement: a }: props) {
+export function AnnouncementCard({ announcement: a }: Props) {
   const { spacing, colors } = useTheme();
   const { width } = useWindowDimensions();
+
   return (
     <YStack
       style={{
