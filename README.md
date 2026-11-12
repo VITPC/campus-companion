@@ -14,12 +14,12 @@ The UI design for every screen is in [`design/`](design/README.md). Colours, fon
 
 ### 1. Install the tools
 
-| Tool | Why | Check it works |
-|---|---|---|
-| [Git](https://git-scm.com/downloads) | Version control | `git --version` |
-| [Node.js](https://nodejs.org/) (LTS) | Runs the Expo tooling | `node --version` |
-| [Bun](https://bun.sh/) | Package manager for this project | `bun --version` |
-| **Expo Go** app on your phone ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779)) | Runs the app on your phone | Open it once |
+| Tool                                                                                                                                                               | Why                              | Check it works   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- | ---------------- |
+| [Git](https://git-scm.com/downloads)                                                                                                                               | Version control                  | `git --version`  |
+| [Node.js](https://nodejs.org/) (LTS)                                                                                                                               | Runs the Expo tooling            | `node --version` |
+| [Bun](https://bun.sh/)                                                                                                                                             | Package manager for this project | `bun --version`  |
+| **Expo Go** app on your phone ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779)) | Runs the app on your phone       | Open it once     |
 
 An Android emulator (Android Studio) or the iOS Simulator (Xcode, macOS only) also works instead of a phone.
 
@@ -81,15 +81,16 @@ scripts/              Helper scripts (create-issues.sh)
 
 ### Branches
 
-| Branch | Purpose |
-|---|---|
-| `main` | Stable code. **Never open a pull request to `main`.** |
-| `dev` | Where all student work is merged. **All pull requests go to `dev`.** |
+| Branch | Purpose                                                              |
+| ------ | -------------------------------------------------------------------- |
+| `main` | Stable code. **Never open a pull request to `main`.**                |
+| `dev`  | Where all student work is merged. **All pull requests go to `dev`.** |
 
 ### Workflow
 
 1. **Pick an issue** on GitHub and comment on it so others know you're working on it.
 2. **Update `dev`** and create your branch from it:
+
    ```bash
    git checkout dev
    git pull origin dev
@@ -98,12 +99,14 @@ scripts/              Helper scripts (create-issues.sh)
    ```
 3. **Build the task.** Match the screen in `design/screens/` and use tokens from `constants/theme.ts`.
 4. **Commit** small, clear steps:
+
    ```bash
    git add .
    git commit -m "feat(courses): add course list with search"
    ```
 5. **Check** that the typecheck and lint both pass (see step 5 of Setup).
 6. **Push** your branch:
+
    ```bash
    git push -u origin feature/<your-name>/<short-task>
    ```
@@ -113,9 +116,11 @@ scripts/              Helper scripts (create-issues.sh)
 
 - **Base branch must be `dev`.** On the "Open a pull request" page, change **base** from `main` to `dev` before creating it. PRs to `main` will be closed.
 - **Title format:**
+
   ```
   feature/<student-name>: <description of task>
   ```
+
   Examples:
   - `feature/ngwa: build course list screen with search`
   - `feature/brenda: add language picker to profile`

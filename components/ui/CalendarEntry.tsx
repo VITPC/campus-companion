@@ -1,7 +1,7 @@
+import { Text } from "@/components/ui/Text";
+import { useTheme } from "@/hooks/useTheme";
 import { XStack } from "./XStack";
 import { YStack } from "./YStack";
-import { useTheme } from "@/hooks/useTheme";
-import { Text } from "@/components/ui/Text";
 
 type props = {
   time: string;

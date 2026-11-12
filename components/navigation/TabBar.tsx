@@ -80,10 +80,7 @@ export function TabBar({
     // 28 from the bottom, or more if the phone's home indicator needs it.
     <View style={[styles.bar, { bottom: Math.max(insets.bottom, 28) }]}>
       {/* Rendered first so it sits behind the icons and labels */}
-      <Animated.View
-        pointerEvents="none"
-        style={[styles.pill, pillStyle]}
-      />
+      <Animated.View pointerEvents="none" style={[styles.pill, pillStyle]} />
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const focused = state.index === index;

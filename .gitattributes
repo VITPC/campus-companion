@@ -1,0 +1,4 @@
+# Normalise all text files to LF, in the repository and in the working tree.
+# Without this, Windows checkouts (core.autocrlf=true) get CRLF endings and
+# `bunx @biomejs/biome check .` fails on every file.
+* text=auto eol=lf

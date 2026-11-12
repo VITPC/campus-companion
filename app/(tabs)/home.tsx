@@ -1,21 +1,24 @@
+import { router } from "expo-router";
+import { FlatList, Pressable, View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { AnnouncementCard } from "@/components/ui/AnnouncementCard";
+import { Avatar } from "@/components/ui/Avatar";
 import { CalendarEntry } from "@/components/ui/CalendarEntry";
 import { Screen } from "@/components/ui/Screen";
 import { Text } from "@/components/ui/Text";
 import { XStack } from "@/components/ui/XStack";
 import { YStack } from "@/components/ui/YStack";
+import { useSettings } from "@/context/SettingsContext";
 import { useData } from "@/hooks/useData";
 import { useTheme } from "@/hooks/useTheme";
-import { Image } from "expo-image";
-import { router } from "expo-router";
-import { FlatList, Pressable, View } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { useTranslation } from "@/hooks/useTranslation";
+import data from "@/mocks/data.json";
 
-export default function () {
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
+export default function HomeScreen() {
   const { spacing, colors } = useTheme();
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
   const { announcements } = useData();
+  const { t } = useTranslation();
+  const { photoUri } = useSettings();
 
   return (
     <SafeAreaProvider>
@@ -32,12 +35,10 @@ export default function () {
             <Text variant="h1">Morning, Ngwa</Text>
           </YStack>
           <Pressable onPress={() => router.push("/(tabs)/profile")}>
-            <Image
-              style={{ width: 80, height: 80, borderRadius: 1000 }}
-              source="https://picsum.photos/seed/686/80"
-              // placeholder={{ blurhash }}
-              contentFit="cover"
-              transition={1000}
+            <Avatar
+              name={`${data.student.firstName} ${data.student.lastName}`}
+              size={80}
+              photoUri={photoUri}
             />
           </Pressable>
         </XStack>
@@ -87,7 +88,7 @@ export default function () {
         <XStack
           style={{ alignItems: "center", justifyContent: "space-between" }}
         >
-          <Text variant="h2">Later Today</Text>
+          <Text variant="h2">{t("home.laterToday")}</Text>
           <Text style={{ textDecorationLine: "underline" }}>Full week</Text>
         </XStack>
 
@@ -106,7 +107,7 @@ export default function () {
         <XStack
           style={{ alignItems: "center", justifyContent: "space-between" }}
         >
-          <Text variant="bodyBold">Announcements</Text>
+          <Text variant="bodyBold">{t("home.announcements")}</Text>
           <Text style={{ textDecorationLine: "underline" }}>See all</Text>
         </XStack>
 
