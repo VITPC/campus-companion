@@ -88,7 +88,12 @@ export default function () {
           style={{ alignItems: "center", justifyContent: "space-between" }}
         >
           <Text variant="h2">Later Today</Text>
-          <Text style={{ textDecorationLine: "underline" }}>Full week</Text>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push("/(tabs)/home/week")}
+          >
+            <Text style={{ textDecorationLine: "underline" }}>Full week</Text>
+          </Pressable>
         </XStack>
 
         {/* Later today */}
