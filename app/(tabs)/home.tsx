@@ -1,3 +1,4 @@
+
 import { AnnouncementCard } from "@/components/ui/AnnouncementCard";
 import { CalendarEntry } from "@/components/ui/CalendarEntry";
 import { Screen } from "@/components/ui/Screen";
@@ -11,10 +12,8 @@ import { router } from "expo-router";
 import { FlatList, Pressable, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-export default function () {
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
+export default function HomeScreen() {
   const { spacing, colors } = useTheme();
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
   const { announcements } = useData();
 
   return (
@@ -35,7 +34,6 @@ export default function () {
             <Image
               style={{ width: 80, height: 80, borderRadius: 1000 }}
               source="https://picsum.photos/seed/686/80"
-              // placeholder={{ blurhash }}
               contentFit="cover"
               transition={1000}
             />
@@ -91,7 +89,6 @@ export default function () {
           <Text style={{ textDecorationLine: "underline" }}>Full week</Text>
         </XStack>
 
-        {/* Later today */}
         <CalendarEntry
           courseTitle="Mobile Development"
           time={"10:30"}
@@ -102,7 +99,8 @@ export default function () {
           time={"14:00"}
           hall={"MAT305-Amphi 250"}
         />
-        {/*Announcement card*/}
+
+        {/* Announcement card */}
         <XStack
           style={{ alignItems: "center", justifyContent: "space-between" }}
         >
