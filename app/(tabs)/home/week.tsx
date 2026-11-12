@@ -6,6 +6,10 @@ import { useTheme } from "@/hooks/useTheme";
 import { router } from "expo-router";
 import { useState } from "react";
 import { Pressable, View } from "react-native";
+import {
+  SafeAreaProvider,
+  SafeAreaView,
+} from "react-native-safe-area-context";
 
 const weekdays = [
   { key: "mon", label: "MON" },
@@ -105,7 +109,7 @@ export default function WeekTimetableScreen() {
   );
   const nowMinutes = minutesSinceMidnight(meta.now.slice(11, 16));
 
-  return (
+  const screenContent = (
     <Screen
       style={{
         paddingHorizontal: spacing.xl,
@@ -290,5 +294,13 @@ export default function WeekTimetableScreen() {
         </View>
       )}
     </Screen>
+  );
+
+  return (
+    <SafeAreaProvider>
+      <SafeAreaView edges={["top"]} style={{ flex: 1 }}>
+        {screenContent}
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
