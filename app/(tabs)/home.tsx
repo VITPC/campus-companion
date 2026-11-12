@@ -1,3 +1,6 @@
+import { router } from "expo-router";
+import { FlatList, Pressable, View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { AnnouncementCard } from "@/components/ui/AnnouncementCard";
 import { Avatar } from "@/components/ui/Avatar";
 import { CalendarEntry } from "@/components/ui/CalendarEntry";
@@ -10,18 +13,11 @@ import { useData } from "@/hooks/useData";
 import { useTheme } from "@/hooks/useTheme";
 import { useTranslation } from "@/hooks/useTranslation";
 import data from "@/mocks/data.json";
-import { router } from "expo-router";
-import { FlatList, Pressable, View } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
-export default function () {
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
+export default function HomeScreen() {
   const { spacing, colors } = useTheme();
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
   const { announcements } = useData();
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
   const { t } = useTranslation();
-  // biome-ignore lint/correctness/useHookAtTopLevel: <explanation>
   const { photoUri } = useSettings();
 
   return (

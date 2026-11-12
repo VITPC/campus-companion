@@ -31,9 +31,7 @@ export function Switch({
 }: props) {
   const { colors } = useTheme();
   // Lazy initialiser keeps one Animated.Value for the component's lifetime.
-  const [translateX] = useState(
-    () => new Animated.Value(value ? TRAVEL : 0),
-  );
+  const [translateX] = useState(() => new Animated.Value(value ? TRAVEL : 0));
 
   // Keep the animation in sync when `value` changes from the outside too.
   useEffect(() => {

@@ -15,8 +15,8 @@ Resolves #<!-- issue number -->
 
 ## Screenshots
 
-| Design | My screen |
-|---|---|
+| Design                                                | My screen                          |
+| ----------------------------------------------------- | ---------------------------------- |
 | <!-- drag the design PNG from design/screens here --> | <!-- drag your screenshot here --> |
 
 ## Checklist

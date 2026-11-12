@@ -3,9 +3,9 @@
 // student's name and the matricule/programme/level subtitle. §6.3 / §6.4.
 import { Feather } from "@expo/vector-icons";
 import { Pressable, View } from "react-native";
-import { radius } from "@/constants/theme";
 import { Avatar } from "@/components/ui/Avatar";
 import { Text } from "@/components/ui/Text";
+import { radius } from "@/constants/theme";
 import { useTheme } from "@/hooks/useTheme";
 import { useTranslation } from "@/hooks/useTranslation";
 

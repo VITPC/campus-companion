@@ -259,7 +259,9 @@ export function ChangePhotoSheet({ visible, onClose }: props) {
         >
           <View style={[styles.grabber, { backgroundColor: colors.border }]} />
 
-          <View style={[styles.headerRow, { marginTop: spacing.lg + spacing.xs }]}>
+          <View
+            style={[styles.headerRow, { marginTop: spacing.lg + spacing.xs }]}
+          >
             <Avatar
               name={`${student.firstName} ${student.lastName}`}
               size={AVATAR_SIZE}
@@ -267,7 +269,11 @@ export function ChangePhotoSheet({ visible, onClose }: props) {
             />
             <View style={{ flex: 1, marginLeft: spacing.lg }}>
               <Text variant="h2">{t("photo.title")}</Text>
-              <Text variant="caption" color="textMuted" style={{ marginTop: 2 }}>
+              <Text
+                variant="caption"
+                color="textMuted"
+                style={{ marginTop: 2 }}
+              >
                 {t("photo.hint")}
               </Text>
             </View>

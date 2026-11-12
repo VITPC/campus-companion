@@ -77,9 +77,7 @@ export default function LanguageScreen() {
                 code={language.code}
                 name={language.nativeName}
                 subtitle={
-                  language.isDefault
-                    ? t("language.default")
-                    : language.name
+                  language.isDefault ? t("language.default") : language.name
                 }
                 selected={settings.language === language.code}
                 onPress={() => {

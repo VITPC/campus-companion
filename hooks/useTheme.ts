@@ -1,5 +1,5 @@
-import { colors, radius, spacing, typography } from "@/constants/theme";
 import { useColorScheme } from "react-native";
+import { colors, radius, spacing, typography } from "@/constants/theme";
 
 export function useTheme() {
   const scheme = useColorScheme() ?? "light";

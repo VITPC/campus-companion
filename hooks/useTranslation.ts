@@ -2,11 +2,7 @@
 // Issue #16: tiny translator with no external i18n library. Reads the language
 // from the settings context, so changing it re-renders every consumer at once.
 import { useSettings } from "@/context/SettingsContext";
-import {
-  en,
-  type TranslationKey,
-  translations,
-} from "@/i18n/translations";
+import { en, type TranslationKey, translations } from "@/i18n/translations";
 
 export function useTranslation() {
   const { settings } = useSettings();

@@ -102,11 +102,26 @@ export const fonts = {
 
 export const typography = {
   // Big numbers (results score)
-  display: { fontFamily: fonts.bold, fontSize: 52, lineHeight: 56, letterSpacing: -1.5 },
+  display: {
+    fontFamily: fonts.bold,
+    fontSize: 52,
+    lineHeight: 56,
+    letterSpacing: -1.5,
+  },
   // Screen titles: "Courses", "Results"
-  h1: { fontFamily: fonts.bold, fontSize: 32, lineHeight: 38, letterSpacing: -0.64 },
+  h1: {
+    fontFamily: fonts.bold,
+    fontSize: 32,
+    lineHeight: 38,
+    letterSpacing: -0.64,
+  },
   // Card titles: "Data Structures", "Linked lists lab"
-  h2: { fontFamily: fonts.bold, fontSize: 22, lineHeight: 28, letterSpacing: -0.44 },
+  h2: {
+    fontFamily: fonts.bold,
+    fontSize: 22,
+    lineHeight: 28,
+    letterSpacing: -0.44,
+  },
   // Section headings: "Later today", "Announcements"
   h3: { fontFamily: fonts.bold, fontSize: 17, lineHeight: 22 },
   body: { fontFamily: fonts.regular, fontSize: 15, lineHeight: 22 },

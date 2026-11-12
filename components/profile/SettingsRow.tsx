@@ -9,8 +9,8 @@ import {
   Pressable,
   View,
 } from "react-native";
-import { fonts } from "@/constants/theme";
 import { Text } from "@/components/ui/Text";
+import { fonts } from "@/constants/theme";
 import { useTheme } from "@/hooks/useTheme";
 
 type FeatherName = ComponentProps<typeof Feather>["name"];

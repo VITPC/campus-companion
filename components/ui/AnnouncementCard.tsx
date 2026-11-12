@@ -1,7 +1,7 @@
+import { useWindowDimensions } from "react-native";
 import { useTheme } from "@/hooks/useTheme";
-import { YStack } from "./YStack";
 import { Text } from "./Text";
-import { Dimensions, useWindowDimensions } from "react-native";
+import { YStack } from "./YStack";
 
 type Announcement = {
   id: string;

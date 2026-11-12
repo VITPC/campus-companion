@@ -3,8 +3,8 @@
 // indicator (filled blue + yellow tick when selected). MY_UI_IMPLEMENTATION.md §7.5.
 import { Feather } from "@expo/vector-icons";
 import { Pressable, View } from "react-native";
-import { radius } from "@/constants/theme";
 import { Text } from "@/components/ui/Text";
+import { radius } from "@/constants/theme";
 import { useTheme } from "@/hooks/useTheme";
 
 type props = {

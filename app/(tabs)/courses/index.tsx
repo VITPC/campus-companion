@@ -1,8 +1,8 @@
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Screen } from "@/components/ui/Screen";
 import { Text } from "@/components/ui/Text";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
-export default function () {
+export default function CoursesScreen() {
   return (
     <SafeAreaProvider>
       <Screen>
